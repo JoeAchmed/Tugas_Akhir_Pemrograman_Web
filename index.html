@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#2327be" />
     <meta
@@ -15,6 +14,7 @@
       name="description"
       content="Aplikasi peminjaman ruangan yang memudahkan dosen dan mahasiswa untuk proses kegiatan belajar mengajar. "
     />
+    <link rel="icon" href="./assets/img/e-Ruang.png" />
     <title>e-Ruang | Sistem Peminjaman Ruangan Nurul Fikri</title>
     <link rel="stylesheet" href="assets/css/index.css" />
     <link
@@ -25,10 +25,14 @@
     />
   </head>
   <body>
+    <!-- Header -->
     <header class="row bg-white shadow-sm px-3 sticky-top">
       <div class="col-md-12">
         <div class="row">
-          <div class="col-md-12 text-center py-2">
+          <div
+            class="col-md-12 text-center py-2 d-flex align-items-start justify-content-center gap-3"
+          >
+            <img src="./assets/img/e-Ruang.png" alt="logo e-ruang" width="30" />
             <h3>e-Ruang | Sistem Peminjaman Ruangan Nurul Fikri</h3>
           </div>
         </div>
@@ -49,19 +53,37 @@
               <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
                   <li class="nav-item">
-                    <a class="nav-link text-primary-emphasis" href="./index.html">Home</a>
+                    <a
+                      class="nav-link text-primary-emphasis"
+                      href="./index.html"
+                      >Home</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-primary-emphasis" href="./frontend/fasilitas.html">Fasilitas</a>
+                    <a
+                      class="nav-link text-primary-emphasis"
+                      href="./frontend/fasilitas.html"
+                      >Fasilitas</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-primary-emphasis" href="#">Booking</a>
+                    <a
+                      class="nav-link text-primary-emphasis"
+                      href="./frontend/booking.html"
+                      >Booking</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-primary-emphasis" href="#">Berita</a>
+                    <a class="nav-link text-primary-emphasis" href="#"
+                      >Berita</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-primary-emphasis" href="#">Tentang Kami</a>
+                    <a
+                      class="nav-link text-primary-emphasis"
+                      href="frontend/about.html"
+                      >Tentang Kami</a
+                    >
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -69,11 +91,20 @@
                     <span class="input-group-text">
                       <i class="fas fa-search"></i>
                     </span>
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
                   </div>
-                  <button class="btn btn-outline-primary">
+                  <a
+                    href="./login.html"
+                    class="btn btn-outline-primary"
+                    role="button"
+                  >
                     Login
-                  </button>
+                  </a>
                 </form>
               </div>
             </div>
@@ -82,16 +113,19 @@
       </div>
     </header>
 
+    <!-- Main content -->
     <main class="px-3 my-5">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-8">
-            <div class="card shadow border-0">
-              <div class="card-body jumbotron">
-                <div class="row">
+            <div class="container-md bg-body rounded py-3 shadow border-0">
+              <div class="jumbotron">
+                <div class="row border-bottom">
                   <div class="col-md-8">
-                    <h4 class="display-7">Tentang e-Ruang</h4>
+                    <h4 class="font-bold">Tentang e-Ruang</h4>
                   </div>
+
+                  <!-- Breadcrumb -->
                   <div class="col-md-4 d-flex justify-content-end">
                     <nav
                       style="--bs-breadcrumb-divider: '>'"
@@ -106,7 +140,7 @@
                     </nav>
                   </div>
                 </div>
-                <div class="row">
+                <div class="row pt-3">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Molestiae temporibus, enim ad placeat quidem culpa iusto?
@@ -128,8 +162,7 @@
                       <div class="col-md-8">
                         <p class="text-small text-muted">
                           Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Animi sit facere ipsa, eveniet vitae illo,
-                          corru....
+                          elit. Animi sit facere ipsa, corru....
                         </p>
                       </div>
                     </div>
@@ -140,15 +173,14 @@
                       <div class="col-md-4">
                         <img
                           src="./assets/img/aula.jpeg"
-                          class="img-fluid mt-1"
+                          class="img-fluid mt-1 hover-zoom"
                           alt="..."
                         />
                       </div>
                       <div class="col-md-8">
                         <p class="text-small text-muted">
                           Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Animi sit facere ipsa, eveniet vitae illo,
-                          corru....
+                          elit. Animi sit facere ipsa, corru....
                         </p>
                       </div>
                     </div>
@@ -166,8 +198,7 @@
                       <div class="col-md-8">
                         <p class="text-small text-muted">
                           Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Animi sit facere ipsa, eveniet vitae illo,
-                          corru....
+                          elit. Animi sit facere ipsa, corru....
                         </p>
                       </div>
                     </div>
@@ -176,101 +207,120 @@
               </div>
             </div>
 
-            <div class="card shadow border-0 mt-2">
-              <div class="card-body">
-                <h4 class="display-7 text-center">Rekomendasi Ruangan</h4>
-                <div class="d-flex px-2 my-4">
-                  <fieldset class="border p-2 rounded">
-                    <legend class="h6 text-center">Meeting Room Garuda</legend>
-                    <div class="row">
+            <div class="container bg-body rounded py-3 shadow border-0 mt-2">
+              <h4 class="text-center">Rekomendasi Ruangan</h4>
+              <div class="row d-flex flex-col flex-md-row gap-3 gap-md-0 my-4 wrapper-recommendations">
+                <div class="col-md-4">
+                  <a
+                    href="./frontend/meeting-room.html"
+                    class="text-decoration-none text-black-50"
+                  >
+                    <div class="card p-2 rounded">
+                      <legend class="h6 text-center">
+                        Meeting Room Garuda
+                      </legend>
                       <img
-                        src="./assets/img/lab-komputer.jpeg"
+                        src="./assets/img/ruang-rapat.jpeg"
                         class="img-fluid"
                         alt="Meeting Room Garuda"
                       />
                       <div class="d-flex justify-content-between my-3 m-0">
                         <div class="text-small">
                           <i class="fas fa-user"></i>
-                          6
+                          8
                         </div>
                         <div class="text-small d-flex justify-content-end">
-                          Rp. 500k/jam
+                          Rp. 250k/Jam
                         </div>
                       </div>
                     </div>
-                  </fieldset>
-                  <fieldset class="border mx-2 p-2 rounded">
-                    <legend class="h6 text-center">Conference Room Nuri</legend>
-                    <div class="row">
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a
+                    href="./frontend/conference-room.html"
+                    class="text-decoration-none text-black-50"
+                  >
+                    <div class="card p-2 rounded">
+                      <legend class="h6 text-center">
+                        Conference Room Nuri
+                      </legend>
                       <img
-                        src="./assets/img/lab-komputer.jpeg"
+                        src="./assets/img/ruang-seminar.jpeg"
                         class="img-fluid"
                         alt="Conference Room Nuri"
                       />
                       <div class="d-flex justify-content-between my-3 m-0">
                         <div class="text-small">
                           <i class="fas fa-user"></i>
-                          10
+                          21
                         </div>
                         <div class="text-small d-flex justify-content-end">
-                          Rp. 250k/jam
+                          Rp. 500k/Jam
                         </div>
                       </div>
                     </div>
-                  </fieldset>
-                  <fieldset class="border p-2 rounded">
-                    <legend class="h6 text-center">Aula Cendrawasih</legend>
-                    <div class="row">
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a
+                    href="./frontend/aula.html"
+                    class="text-decoration-none text-black-50"
+                  >
+                    <div class="card p-2 rounded">
+                      <legend class="h6 text-center">Aula Cendrawasih</legend>
                       <img
-                        src="./assets/img/lab-komputer.jpeg"
+                        src="./assets/img/aula.jpeg"
                         class="img-fluid"
                         alt="Aula Cendrawasih"
                       />
                       <div class="d-flex justify-content-between my-3 m-0">
                         <div class="text-small">
                           <i class="fas fa-user"></i>
-                          15
+                          14
                         </div>
                         <div class="text-small d-flex justify-content-end">
-                          Rp. 200k/jam
+                          Rp. 1.000k/Jam
                         </div>
                       </div>
                     </div>
-                  </fieldset>
+                  </a>
                 </div>
               </div>
+              <!-- </div> -->
             </div>
           </div>
 
-          <div class="col-md-4">
+          <!-- Sidebar -->
+          <div class="col-md-4 mt-md-0 mt-2">
             <div class="card shadow border-0 pb-3">
               <div class="card-body">
                 <h5 class="font-bold">Kategory Ruangan</h5>
               </div>
               <div class="list-group">
                 <a
-                  href="#hall"
+                  href="./frontend/aula.html"
                   class="list-group-item list-group-item-action border-0 border-bottom text-primary-emphasis d-flex align-items-center gap-2"
                 >
                   <i class="fas fa-chevron-circle-right"></i>
                   Aula
                 </a>
                 <a
-                  href="#meeting-room"
+                  href="./frontend/meeting-room.html"
                   class="list-group-item list-group-item-action border-0 border-bottom text-primary-emphasis d-flex align-items-center gap-2"
                 >
                   <i class="fas fa-chevron-circle-right"></i>
                   Ruang Rapat
                 </a>
                 <a
-                  href="#ceminar-room"
+                  href="./frontend/conference-room.html"
                   class="list-group-item list-group-item-action border-0 border-bottom text-primary-emphasis d-flex align-items-center gap-2"
                 >
                   <i class="fas fa-chevron-circle-right"></i>
                   Ruang Seminar
                 </a>
                 <a
-                  href="#computer-room"
+                  href="./frontend/lab-computer.html"
                   class="list-group-item list-group-item-action border-0 text-primary-emphasis d-flex align-items-center gap-2"
                 >
                   <i class="fas fa-chevron-circle-right"></i>
@@ -281,9 +331,16 @@
           </div>
         </div>
       </div>
+
+      <!-- btn scroll to top -->
+      <button type="button" class="btn btn-primary" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
     </main>
+
+    <!-- Footer -->
     <footer
-      class="container-fluid bg-secondary text-white py-3 absolute bottom-0 mt-5 px-4"
+      class="container-fluid bg-secondary text-white py-3 absolute bottom-0 px-4 mt-5"
     >
       Developed by Mahasiswa STT-NF @2022
     </footer>
@@ -301,5 +358,7 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <!-- Link main.js additional functions -->
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

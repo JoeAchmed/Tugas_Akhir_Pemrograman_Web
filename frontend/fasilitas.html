@@ -9,15 +9,18 @@
   <meta name="theme-color" content="#2327be" />
   <meta name="title" content="e-Ruang - Sistem Peminjaman Ruangan Nurul Fikri">
   <meta name="description" content="Aplikasi peminjaman ruangan yang memudahkan dosen dan mahasiswa untuk proses kegiatan belajar mengajar. ">
+  <link rel="icon" href="../assets/img/e-Ruang.png" />
   <title>e-Ruang | Sistem Peminjaman Ruangan Nurul Fikri</title>
   <link rel="stylesheet" href="../assets/css/index.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
+  <!-- Header -->
   <header class="row bg-white shadow-sm px-3 sticky-top">
     <div class="col-md-12">
       <div class="row">
-        <div class="col-md-12 text-center py-2">
+        <div class="col-md-12 text-center py-2 d-flex align-items-start justify-content-center gap-3">
+          <img src="../assets/img/e-Ruang.png" alt="logo e-ruang" width="30">
           <h3>e-Ruang | Sistem Peminjaman Ruangan Nurul Fikri</h3>
         </div>
       </div>
@@ -38,19 +41,33 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
                 <li class="nav-item">
-                  <a class="nav-link text-primary-emphasis" href="../index.html">Home</a>
+                  <a
+                    class="nav-link text-primary-emphasis"
+                    href="../index.html"
+                    >Home</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-primary-emphasis" href="./fasilitas.html">Fasilitas</a>
+                  <a
+                    class="nav-link text-primary-emphasis"
+                    href="../frontend/fasilitas.html"
+                    >Fasilitas</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-primary-emphasis" href="#">Booking</a>
+                  <a class="nav-link text-primary-emphasis" href="../frontend/booking.html"
+                    >Booking</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-primary-emphasis" href="#">Berita</a>
+                  <a class="nav-link text-primary-emphasis" href="#"
+                    >Berita</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-primary-emphasis" href="#">Tentang Kami</a>
+                  <a class="nav-link text-primary-emphasis" href="about.html"
+                    >Tentang Kami</a
+                  >
                 </li>
               </ul>
               <form class="d-flex" role="search">
@@ -58,11 +75,16 @@
                   <span class="input-group-text">
                     <i class="fas fa-search"></i>
                   </span>
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
                 </div>
-                <button class="btn btn-outline-primary">
+                <a href="../login.html" class="btn btn-outline-primary" role="button">
                   Login
-                </button>
+                </a>
               </form>
             </div>
           </div>
@@ -71,6 +93,7 @@
     </div>
   </header>
 
+  <!-- Main content -->
   <main class="px-lg-3 my-lg-5 my-4">
     <div class="container-fluid">
       <div class="row">
@@ -79,10 +102,12 @@
             <div class="card-body jumbotron" id="hall">
               <div class="row">
                 <div class="col-md-8">
-                  <h4 class="display-7">AULA</h4>
+                  <h4>AULA</h4>
                   <p>Aula besar untuk kegiatan acara MUNAS, Pentas Seni, Wisuda, Pernikahan, dan kegiatan lainnya didalam ruangan ber-AC yang nyaman dan berkesan mewah</p>
                   <a class="btn btn-transparent p-0 text-primary-emphasis" href="aula.html" role="button">Lihat Detail</a>
                 </div>
+
+                <!-- Breadcrumb -->
                 <div class="col-md-4">
                   <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -98,11 +123,11 @@
             <hr class="my-4">
 
             <div class="card-body jumbotron" id="meeting-room">
-              <h4 class="display-7">Ruang Rapat</h4>
+              <h4>Ruang Rapat</h4>
               <div class="row">
                 <div class="col-md-8">
                   <p>Aula besar untuk kegiatan acara MUNAS, Pentas Seni, Wisuda, Pernikahan, dan kegiatan lainnya didalam ruangan ber-AC yang nyaman dan berkesan mewah</p>
-                  <a class="btn btn-transparent p-0 text-primary-emphasis" href="#" role="button">Lihat Detail</a>
+                  <a class="btn btn-transparent p-0 text-primary-emphasis" href="./meeting-room.html" role="button">Lihat Detail</a>
                 </div>
                 <div class="col-md-4">
                   <img src="../assets/img/ruang-rapat.jpeg" class="img-fluid rounded" alt="ruang rapat">
@@ -113,11 +138,11 @@
             <hr class="my-4">
 
             <div class="card-body jumbotron" id="ceminar-room">
-              <h4 class="display-7">Ruang Seminar</h4>
+              <h4>Ruang Seminar</h4>
               <div class="row">
                 <div class="col-md-8">
                   <p>Auditorium megah untuk acara seminar kebangsaan, seminar umum, dapat dipergunakan juga untuk acara konser maupun pergelaran drama dan banyak acara lainnya</p>
-                  <a class="btn btn-transparent p-0 text-primary-emphasis" href="#" role="button">Lihat Detail</a>
+                  <a class="btn btn-transparent p-0 text-primary-emphasis" href="./conference-room.html" role="button">Lihat Detail</a>
                 </div>
                 <div class="col-md-4">
                   <img src="../assets/img/ruang-seminar.jpeg" class="img-fluid rounded" alt="ruang seminar">
@@ -128,11 +153,11 @@
             <hr class="my-4">
 
             <div class="card-body jumbotron" id="computer-room">
-              <h4 class="display-7">Lab Komputer</h4>
+              <h4>Lab Komputer</h4>
               <div class="row">
                 <div class="col-md-8">
                   <p>Tersedia 40 unit komputer, proyektor dan aplikasi penunjang kegiatan belajar mahasiswa. Terkoneksi jaringan internet yang cepat dan stabil, sebagai penunjang kegiatan praktikum siswa</p>
-                  <a class="btn btn-transparent p-0 text-primary-emphasis" href="#" role="button">Lihat Detail</a>
+                  <a class="btn btn-transparent p-0 text-primary-emphasis" href="./lab-computer.html" role="button">Lihat Detail</a>
                 </div>
                 <div class="col-md-4">
                   <img src="../assets/img/lab-komputer.jpeg" class="img-fluid rounded" alt="ruang komputer">
@@ -141,25 +166,27 @@
             </div>
           </div>
         </div>
+
+        <!-- Sidebar -->
         <div class="col-md-4">
           <div class="card shadow border-0 pb-3">
             <div class="card-body">
               <h5 class="font-bold">Kategory Ruangan</h5>
             </div>
             <div class="list-group">
-              <a href="#hall" class="list-group-item list-group-item-action border-0 border-bottom text-primary-emphasis d-flex align-items-center gap-2">
+              <a href="./aula.html" class="list-group-item list-group-item-action border-0 border-bottom text-primary-emphasis d-flex align-items-center gap-2">
                 <i class="fas fa-chevron-circle-right"></i>
                 Aula
               </a>
-              <a href="#meeting-room" class="list-group-item list-group-item-action border-0 border-bottom text-primary-emphasis d-flex align-items-center gap-2">
+              <a href="./meeting-room.html" class="list-group-item list-group-item-action border-0 border-bottom text-primary-emphasis d-flex align-items-center gap-2">
                 <i class="fas fa-chevron-circle-right"></i>
                 Ruang Rapat
               </a>
-              <a href="#ceminar-room" class="list-group-item list-group-item-action border-0 border-bottom text-primary-emphasis d-flex align-items-center gap-2">
+              <a href="./conference-room.html" class="list-group-item list-group-item-action border-0 border-bottom text-primary-emphasis d-flex align-items-center gap-2">
                 <i class="fas fa-chevron-circle-right"></i>
                 Ruang Seminar
               </a>
-              <a href="#computer-room" class="list-group-item list-group-item-action border-0 text-primary-emphasis d-flex align-items-center gap-2">
+              <a href="./lab-computer.html" class="list-group-item list-group-item-action border-0 text-primary-emphasis d-flex align-items-center gap-2">
                 <i class="fas fa-chevron-circle-right"></i>
                 Ruang Komputer
               </a>
@@ -168,7 +195,14 @@
         </div>
       </div>
     </div>
+
+    <!-- btn scroll to top -->
+    <button type="button" class="btn btn-primary" id="btn-back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
   </main>
+
+  <!-- Footer -->
   <footer class="container-fluid bg-secondary text-white py-3 absolute bottom-0 mt-5 px-4">
     Developed by Mahasiswa STT-NF @2022
   </footer>
@@ -177,5 +211,7 @@
   <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
   <!-- Link CDN Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <!-- Link main.js additional functions -->
+  <script src="../assets/js/main.js"></script>
 </body>
 </html>

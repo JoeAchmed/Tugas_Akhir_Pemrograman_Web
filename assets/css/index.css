@@ -5,10 +5,14 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
   padding: 0;
   margin: 0;
-  width: 100vw;
   overflow-x: hidden;
+  justify-content: space-between;
   background-color: #F2F7FF !important;
   scroll-behavior: smooth;
   scrollbar-width: none;
@@ -24,7 +28,111 @@ body::-webkit-scrollbar {
   width: 100%;
 }
 
+.navbar-nav > .nav-item > .nav-link:hover {
+  transition: 0.25s ease-in;;
+  transform: scale(1.15);
+  color: #fb9200 !important;
+}
+
 .text-small {
   font-size: 12px;
   padding: 0;
+}
+
+/* button scroll to top */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  display: none;
+}
+
+/* Page home */
+.wrapper-recommendations img {
+  height: 150px;
+  width: 100%;
+}
+
+.wrapper-recommendations .card:hover {
+  transition: 0.25s ease-in;;
+  transform: scale(1.015);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+/* Page tentang kami */
+.box:nth-child(1) {
+  background-image: url("../img/waluyo.jpg");
+}
+.box:nth-child(2) {
+  background-image: url("https://i.imgur.com/WgXRMDs.jpg");
+}
+.box:nth-child(3) {
+  background-image: url("https://i.imgur.com/0Cdlenp.jpg");
+}
+.box:nth-child(4) {
+  background-image: url("https://i.imgur.com/0Cdlenp.jpg");
+}
+
+.wrapper-profile > .box {
+  text-align:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  width: 240px;
+  height: 240px;
+  position:relative;
+  overflow:hidden;
+}
+
+.wrapper-profile > .box > .cover {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  transition: opacity 0.15s ease-in;
+  opacity:0;
+  padding-top:80px;
+  color:#fff;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.15);
+}
+
+.wrapper-profile > .box:hover .cover {
+  opacity:1;
+}
+
+.wrapper-profile > .box > .cover > .name {
+  font-weight:bold;
+  margin-bottom:8px;
+}
+
+.wrapper-profile > .box > .cover > .title {
+  text-transform:uppercase;
+  font-weight:bold;
+  color:#bbd8fb;
+  letter-spacing:2px;
+  font-size:13px;
+  margin-bottom:20px;
+}
+
+.social {
+  font-size:18px;
+}
+ 
+.social a {
+  color:inherit;
+  margin:0 10px;
+  display:inline-block;
+  opacity:0.7;
+}
+.social a:hover {
+  opacity:1;
+}
+
+
+/* Handle responsive */
+@media screen and (max-width: 768px) {
+  .navbar-nav > .nav-item > .nav-link:hover {
+    transform: scale(1);
+  }
 }
