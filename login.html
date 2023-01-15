@@ -98,49 +98,12 @@
                 timer: 3000
             });
             if (username == 'admin' && password == 'admin') {
-                form.setAttribute('action', 'backend/daftar_peminjam.html');
+                form.setAttribute('action', 'backend/index.html');
                 window.alert('Login Berhasil');
             } else {
                 window.alert('Login Gagal')
             }
             console.log(username.password);
-            // $(form).validate({
-            //     rules: {
-            //         username: {
-            //             required: true,
-            //             username: true,
-            //         },
-            //         password: {
-            //             required: true,
-            //             minlength: 5
-            //         },
-            //         remember: {
-            //             required: true
-            //         },
-            //     },
-            //     messages: {
-            //         username: {
-            //             required: "Please enter a username address",
-            //             username: "Please enter a valid username address"
-            //         },
-            //         password: {
-            //             required: "Please provide a password",
-            //             minlength: "Your password must be at least 5 characters long"
-            //         },
-            //         terms: "Please accept our terms"
-            //     },
-            //     errorElement: 'span',
-            //     errorPlacement: function (error, element) {
-            //         error.addClass('invalid-feedback');
-            //         element.closest('.form-group').append(error);
-            //     },
-            //     highlight: function (element, errorClass, validClass) {
-            //         $(element).addClass('is-invalid');
-            //     },
-            //     unhighlight: function (element, errorClass, validClass) {
-            //         $(element).removeClass('is-invalid');
-            //     }
-            // });
         })
     </script>
 </body>
