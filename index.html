@@ -1,214 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#2327be" />
-  <meta name="title" content="e-Ruang - Sistem Peminjaman Ruangan Nurul Fikri">
-  <meta name="description" content="Aplikasi peminjaman ruangan yang memudahkan dosen dan mahasiswa untuk proses kegiatan belajar mengajar. ">
-  <title>e-Ruang | Sistem Peminjaman Ruangan Nurul Fikri</title>
-  <link rel="stylesheet" href="assets/css/index.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-</head>
-<body>
-  <header class="row bg-white shadow-sm px-3">
-    <div class="col-md-12">
-      <div class="row">
-        <div class="col-md-12 text-center py-2">
-          <h3>e-Ruang | Sistem Peminjaman Ruangan Nurul Fikri</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#2327be" />
+    <meta
+      name="title"
+      content="e-Ruang - Sistem Peminjaman Ruangan Nurul Fikri"
+    />
+    <meta
+      name="description"
+      content="Aplikasi peminjaman ruangan yang memudahkan dosen dan mahasiswa untuk proses kegiatan belajar mengajar. "
+    />
+    <link rel="icon" href="./assets/img/e-Ruang.png" />
+    <title>e-Ruang | Sistem Peminjaman Ruangan Nurul Fikri</title>
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="row bg-white shadow-sm px-1 px-md-3 sticky-top">
+      <div class="col-md-12">
+        <div class="row">
+          <div
+            class="title-nav text-center py-2 d-flex align-items-start justify-content-center gap-3"
+          >
+            <img src="./assets/img/e-Ruang.png" alt="logo e-ruang" width="30" />
+            <h3 class="fs-3 fs-5">e-Ruang | Sistem Peminjaman Ruangan Nurul Fikri</h3>
+          </div>
+        </div>
+        <div class="row py-3 border-top">
+          <nav class="navbar navbar-expand-lg px-3">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-md-3 mt-md-0 mt-2">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-primary-emphasis"
+                      href="./index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-primary-emphasis"
+                      href="./frontend/fasilitas.html"
+                      >Fasilitas</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-primary-emphasis"
+                      href="./frontend/booking.html"
+                      >Booking</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-primary-emphasis" href="#"
+                      >Berita</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-primary-emphasis"
+                      href="frontend/about.html"
+                      >Tentang Kami</a
+                    >
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <div class="input-group">
+                    <span class="input-group-text">
+                      <i class="fas fa-search"></i>
+                    </span>
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                  </div>
+                  <a
+                    href="./login.html"
+                    class="btn btn-outline-primary"
+                    role="button"
+                  >
+                    Login
+                  </a>
+                </form>
+              </div>
+            </div>
+          </nav>
         </div>
       </div>
-      <div class="row py-3 border-top">
-        <div class="col-md-8">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link text-primary-emphasis active" aria-current="page" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary-emphasis" href="./frontend/fasilitas.html">Fasilitas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary-emphasis" href="#">Booking</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary-emphasis" href="#">Berita</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary-emphasis" href="#">Tentang Kami</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul class="nav">
-            <li class="nav-item">
-              <form class="d-flex input-group" role="search">
-                <span class="input-group-text">
-                  <i class="fas fa-search"></i>
-                </span>
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              </form>
-            </li>
-            <li>
-              <a class="nav-link text-primary-emphasis" href="#">Login</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </header>
-  
-  <main class="px-3 my-5">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-8">
-          <div class="card shadow border-0">
-            <div class="card-body jumbotron">
-              <div class="row">
-                <div class="col-md-8">
-                  <h4 class="display-7">Tentang e-Ruang</h4>
-                </div>
-                <div class="col-md-4 d-flex justify-content-end">
-                  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="#">Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">...</li>
-                    </ol>
-                  </nav>
-                </div>
-              </div>
-              <div class="row">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae temporibus, enim ad placeat quidem culpa iusto? Ipsa doloribus, officia similique, cumque rem deleniti dolore corrupti sint consectetur, itaque quis quo.</p>
-              </div>
-              <div class="row">
-                <div class="col-md-4">
-                  <h6>Fasilitas Terbaru</h6>
-                  <div class="row g-3">
-                    <div class="col-md-4">
-                      <img src="./assets/img/aula.jpeg" class="img-fluid mt-1" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                      <p class="text-small text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi sit facere ipsa, eveniet vitae illo, corru....</p>
-                    </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="px-1 px-md-3 my-4 my-lg-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="container-md bg-body rounded py-3 shadow border-0">
+              <div class="jumbotron">
+                <div class="row border-bottom">
+                  <div class="col-md-8">
+                    <h4 class="font-bold">Tentang e-Ruang</h4>
+                  </div>
+
+                  <!-- Breadcrumb -->
+                  <div class="col-md-4 d-flex justify-content-end">
+                    <nav
+                      style="--bs-breadcrumb-divider: '>'"
+                      aria-label="breadcrumb"
+                    >
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                          ...
+                        </li>
+                      </ol>
+                    </nav>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <h6>Cara Pesan Ruangan</h6>
-                  <div class="row g-3">
-                    <div class="col-md-4">
-                      <img src="./assets/img/aula.jpeg" class="img-fluid mt-1" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                      <p class="text-small text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi sit facere ipsa, eveniet vitae illo, corru....</p>
+                <div class="row pt-3">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae temporibus, enim ad placeat quidem culpa iusto?
+                    Ipsa doloribus, officia similique, cumque rem deleniti
+                    dolore corrupti sint consectetur, itaque quis quo.
+                  </p>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <h6>Fasilitas Terbaru</h6>
+                    <div class="row g-3">
+                      <div class="col-md-4">
+                        <img
+                          src="./assets/img/aula.jpeg"
+                          class="img-fluid mt-1"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <p class="text-small text-muted">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Animi sit facere ipsa, corru....
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-md-4">
-                  <h6>Ruangan yang Nyaman</h6>
-                  <div class="row g-3">
-                    <div class="col-md-4">
-                      <img src="./assets/img/aula.jpeg" class="img-fluid mt-1" alt="...">
+                  <div class="col-md-4">
+                    <h6>Cara Pesan Ruangan</h6>
+                    <div class="row g-3">
+                      <div class="col-md-4">
+                        <img
+                          src="./assets/img/aula.jpeg"
+                          class="img-fluid mt-1 hover-zoom"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <p class="text-small text-muted">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Animi sit facere ipsa, corru....
+                        </p>
+                      </div>
                     </div>
-                    <div class="col-md-8">
-                      <p class="text-small text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi sit facere ipsa, eveniet vitae illo, corru....</p>
+                  </div>
+                  <div class="col-md-4">
+                    <h6>Ruangan yang Nyaman</h6>
+                    <div class="row g-3">
+                      <div class="col-md-4">
+                        <img
+                          src="./assets/img/aula.jpeg"
+                          class="img-fluid mt-1"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <p class="text-small text-muted">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Animi sit facere ipsa, corru....
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div class="container bg-body rounded py-3 shadow border-0 mt-2">
+              <h4 class="text-center">Rekomendasi Ruangan</h4>
+              <div class="row d-flex flex-col flex-md-row gap-3 gap-md-0 my-4 wrapper-recommendations">
+                <div class="col-md-4">
+                  <a
+                    href="./frontend/meeting-room.html"
+                    class="text-decoration-none text-black-50"
+                  >
+                    <div class="card p-2 rounded">
+                      <legend class="h6 text-center">
+                        Meeting Room Garuda
+                      </legend>
+                      <img
+                        src="./assets/img/ruang-rapat.jpeg"
+                        class="img-fluid"
+                        alt="Meeting Room Garuda"
+                      />
+                      <div class="d-flex justify-content-between my-3 m-0">
+                        <div class="text-small">
+                          <i class="fas fa-user"></i>
+                          8
+                        </div>
+                        <div class="text-small d-flex justify-content-end">
+                          Rp. 250k/Jam
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a
+                    href="./frontend/conference-room.html"
+                    class="text-decoration-none text-black-50"
+                  >
+                    <div class="card p-2 rounded">
+                      <legend class="h6 text-center">
+                        Conference Room Nuri
+                      </legend>
+                      <img
+                        src="./assets/img/ruang-seminar.jpeg"
+                        class="img-fluid"
+                        alt="Conference Room Nuri"
+                      />
+                      <div class="d-flex justify-content-between my-3 m-0">
+                        <div class="text-small">
+                          <i class="fas fa-user"></i>
+                          21
+                        </div>
+                        <div class="text-small d-flex justify-content-end">
+                          Rp. 500k/Jam
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a
+                    href="./frontend/aula.html"
+                    class="text-decoration-none text-black-50"
+                  >
+                    <div class="card p-2 rounded">
+                      <legend class="h6 text-center">Aula Cendrawasih</legend>
+                      <img
+                        src="./assets/img/aula.jpeg"
+                        class="img-fluid"
+                        alt="Aula Cendrawasih"
+                      />
+                      <div class="d-flex justify-content-between my-3 m-0">
+                        <div class="text-small">
+                          <i class="fas fa-user"></i>
+                          14
+                        </div>
+                        <div class="text-small d-flex justify-content-end">
+                          Rp. 1.000k/Jam
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- </div> -->
             </div>
           </div>
 
-          <div class="card shadow border-0 mt-2">
-            <div class="card-body">
-              <h4 class="display-7 text-center">Rekomendasi Ruangan</h4>
-              <div class="d-flex px-2 my-4">
-                <fieldset class="border p-2 rounded">
-                  <legend class="h6 text-center">Meeting Room Garuda</legend>
-                  <div class="row">
-                    <img src="./assets/img/lab-komputer.jpeg" class="img-fluid" alt="Meeting Room Garuda">
-                    <div class="d-flex justify-content-between my-3 m-0">
-                      <div class="text-small">
-                        <i class="fas fa-user"></i>
-                        6
-                      </div>
-                      <div class="text-small d-flex justify-content-end">
-                        Rp. 500k/jam
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-                <fieldset class="border mx-2 p-2 rounded">
-                  <legend class="h6 text-center">Conference Room Nuri</legend>
-                  <div class="row">
-                    <img src="./assets/img/lab-komputer.jpeg" class="img-fluid" alt="Conference Room Nuri">
-                    <div class="d-flex justify-content-between my-3 m-0">
-                      <div class="text-small">
-                        <i class="fas fa-user"></i>
-                        10
-                      </div>
-                      <div class="text-small d-flex justify-content-end">
-                        Rp. 250k/jam
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-                <fieldset class="border p-2 rounded">
-                  <legend class="h6 text-center">Aula Cendrawasih</legend>
-                  <div class="row">
-                    <img src="./assets/img/lab-komputer.jpeg" class="img-fluid" alt="Aula Cendrawasih">
-                    <div class="d-flex justify-content-between my-3 m-0">
-                      <div class="text-small">
-                        <i class="fas fa-user"></i>
-                        15
-                      </div>
-                      <div class="text-small d-flex justify-content-end">
-                        Rp. 200k/jam
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
+          <!-- Sidebar -->
+          <div class="col-md-4 mt-md-0 mt-2">
+            <div class="card shadow border-0 pb-3">
+              <div class="card-body">
+                <h5 class="font-bold">Kategory Ruangan</h5>
+              </div>
+              <div class="list-group">
+                <a
+                  href="./frontend/aula.html"
+                  class="list-group-item list-group-item-action border-0 border-bottom text-primary-emphasis d-flex align-items-center gap-2"
+                >
+                  <i class="fas fa-chevron-circle-right"></i>
+                  Aula
+                </a>
+                <a
+                  href="./frontend/meeting-room.html"
+                  class="list-group-item list-group-item-action border-0 border-bottom text-primary-emphasis d-flex align-items-center gap-2"
+                >
+                  <i class="fas fa-chevron-circle-right"></i>
+                  Ruang Rapat
+                </a>
+                <a
+                  href="./frontend/conference-room.html"
+                  class="list-group-item list-group-item-action border-0 border-bottom text-primary-emphasis d-flex align-items-center gap-2"
+                >
+                  <i class="fas fa-chevron-circle-right"></i>
+                  Ruang Seminar
+                </a>
+                <a
+                  href="./frontend/lab-computer.html"
+                  class="list-group-item list-group-item-action border-0 text-primary-emphasis d-flex align-items-center gap-2"
+                >
+                  <i class="fas fa-chevron-circle-right"></i>
+                  Ruang Komputer
+                </a>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col-md-4">
-          <div class="card shadow border-0 pb-3 sticky-top">
-            <div class="card-body">
-              <h5 class="font-bold">Kategory Ruangan</h5>
-            </div>
-            <div class="list-group">
-              <a href="#hall" class="list-group-item list-group-item-action border-0 border-bottom text-primary-emphasis d-flex align-items-center gap-2">
-                <i class="fas fa-chevron-circle-right"></i>
-                Aula
-              </a>
-              <a href="#meeting-room" class="list-group-item list-group-item-action border-0 border-bottom text-primary-emphasis d-flex align-items-center gap-2">
-                <i class="fas fa-chevron-circle-right"></i>
-                Ruang Rapat
-              </a>
-              <a href="#ceminar-room" class="list-group-item list-group-item-action border-0 border-bottom text-primary-emphasis d-flex align-items-center gap-2">
-                <i class="fas fa-chevron-circle-right"></i>
-                Ruang Seminar
-              </a>
-              <a href="#computer-room" class="list-group-item list-group-item-action border-0 text-primary-emphasis d-flex align-items-center gap-2">
-                <i class="fas fa-chevron-circle-right"></i>
-                Ruang Komputer
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-  </main>
-  <footer class="container-fluid bg-secondary text-white py-3 absolute bottom-0 mt-5 px-4">
-    Developed by Mahasiswa STT-NF @2022
-  </footer>
 
-  <!-- Link CDN Fontawesome -->
-  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
-  <!-- Link CDN Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</body>
+      <!-- btn scroll to top -->
+      <button type="button" class="btn btn-primary" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="container-fluid bg-secondary text-white py-3 absolute bottom-0 px-4 mt-5"
+    >
+      Developed by Mahasiswa STT-NF @2022
+    </footer>
+
+    <!-- Link CDN Fontawesome -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link CDN Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link main.js additional functions -->
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
