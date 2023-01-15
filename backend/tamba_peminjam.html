@@ -106,7 +106,8 @@
                   <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                     <ol class="breadcrumb">
                       <li class="breadcrumb-item"><a href="../index.html">Admin</a></li>
-                      <li class="breadcrumb-item"><a href="fasilitas.html">Kelolah Ruangan</a></li>
+                      <li class="breadcrumb-item"><a href="fasilitas.html">Isi Loker</a>
+                      </li>
 
                     </ol>
                   </nav>
@@ -117,80 +118,8 @@
                 <div class="container-fluid">
                   <div class="row">
 
-                    <div class="col-md-3">
-                      <aside class="main-sidebar sidebar-light-primary elevation-4">
-                        <!-- Brand Logo -->
 
-                        <!-- Sidebar -->
-                        <div clas s="sidebar">
-                          <!-- Sidebar user panel (optional) -->
-                          <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                            <div class="image">
-                              <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-                            </div>
-                            <div class="info">
-                              <a href="#" class="d-block">Alexander Pierce</a>
-                            </div>
-                          </div>
-
-                          <!-- SidebarSearch Form -->
-                          <div class="form-inline">
-                            <div class="input-group" data-widget="sidebar-search">
-                              <input class="form-control form-control-sidebar" type="search" placeholder="Search"
-                                aria-label="Search">
-                              <div class="input-group-append">
-                                <button class="btn btn-sidebar">
-                                  <i class="fas fa-search fa-fw"></i>
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-
-                          <!-- Sidebar Menu -->
-                          <nav class="mt-2">
-                            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
-                              data-accordion="false">
-                              <!-- Add icons to the links using the .nav-icon class
-                                       with font-awesome or any other icon font library -->
-                              <li class="nav-item menu-open">
-                                <a href="#" class="nav-link active">
-                                  <i class="fas fa-building"></i>
-                                  <p>Ruangan
-                                    <i class="fas fa-angle-left right"></i>
-                                  </p>
-                                </a>
-
-                              </li>
-                              <li class="nav-item">
-                                <a href="daftar_peminjam.html" class="nav-link">
-                                  <i class="fas fa-list"></i>
-                                  <p>Peminjam</p>
-
-                                </a>
-                              </li>
-                              <li class="nav-item">
-                                <a href="daftar_peminjam.html" class="nav-link">
-                                  <i class="fas fa-table"></i>
-                                  <p>Jadwal</p>
-
-                                </a>
-                              </li>
-                              <li class="nav-item">
-                                <a href="../login.html" class="nav-link">
-                                  <i class="fas fa-sign-out-alt"></i>
-                                  <p>
-                                    logout
-                                  </p>
-                                </a>
-                              </li>
-                            </ul>
-                          </nav>
-                          <!-- /.sidebar-menu -->
-                        </div>
-                        <!-- /.sidebar -->
-                      </aside>
-                    </div>
-                    <div class="col-md-8 ">
+                    <div class="col-md-12 ">
                       <div class="card card-info border-secondary border">
                         <div class="card-header">
                           <h3 class="card-title">Eruang</h3>
@@ -200,17 +129,17 @@
                         <form class="form-horizontal">
                           <div class="card-body">
                             <div class="form-group row">
-                              <label for="nama_ruangan" class="col-sm-2 col-form-label">Nama Ruangan</label>
+                              <label for="nama_ruangan" class="col-sm-2 col-form-label">Nama Peminjam</label>
                               <div class="col-sm-10">
                                 <input type="text" class="form-control" id="nama_ruangan">
                               </div>
                             </div>
                             <div class="form-group row">
-                              <label for="kategori" class="col-sm-2 col-form-label">Kategori</label>
+                              <label for="kategori" class="col-sm-2 col-form-label">Nama Ruangan</label>
                               <div class="col-sm-5">
 
                                 <select id="select" name="kategori" class="custom-select">
-                                  <option value="aula">Aula</option>
+                                  <option value="aula">Aula Cendrawasih</option>
                                   <option value="kelas">Kelas</option>
                                   <option value="fish">Fish</option>
                                 </select>
@@ -218,7 +147,7 @@
                               </div>
                             </div>
                             <div class="form-group row">
-                              <label for="descripsi" class="col-sm-2 col-form-label">Descripsi</label>
+                              <label for="descripsi" class="col-sm-2 col-form-label">Descripsi kegiatan</label>
                               <div class="col-sm-10">
                                 <textarea name="descripsi" id="descripsi" cols="77" rows="10"></textarea>
                               </div>
@@ -241,6 +170,12 @@
                                     value="layar_besar" checked="checked">
                                   <label for="checkbox_2" class="custom-control-label">Layar Besar</label>
                                 </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="nama_ruangan" class="col-sm-2 col-form-label">Tanggal Pinjaman</label>
+                              <div class="col-sm-10">
+                                <input type="date" class="form-control" id="nama_ruangan">
                               </div>
                             </div>
                             <div class="form-group row">
