@@ -26,9 +26,9 @@
     />
   </head>
   <body>
-    <div class="wrapper-container">
+    <div class="wrapper-container container-100vh">
       <!-- Header -->
-      <header class="row bg-white shadow-sm px-1 px-md-3 sticky-top">
+      <header class="row bg-white shadow-sm px-1 px-md-3">
         <div class="col-md-12">
           <div class="row">
             <div
@@ -127,13 +127,14 @@
       <!-- Content Aula  -->
       <main class="px-1 px-md-3 mb-5 mt-3">
         <div class="container-fluid">
-          <div class="row">
+          <!-- list booking -->
+          <div class="row" id="list-booking">
             <div class="col-md-12">
               <div class="card shadow border-0">
                 <div class="card-body">
-                  <div class="row">
+                  <div class="row border-bottom mb-3">
                     <div class="col-md-8">
-                      <h4>Aula Cendrawasih</h4>
+                      <h4>Daftar Booking Ruangan</h4>
                     </div>
 
                     <!-- Breadcrumb -->
@@ -146,73 +147,263 @@
                           <li class="breadcrumb-item">
                             <a href="../index.html">Home</a>
                           </li>
-                          <li class="breadcrumb-item">
-                            <a href="fasilitas.html">Fasilitas</a>
-                          </li>
                           <li
                             class="breadcrumb-item active"
                             aria-current="page"
                           >
-                            Aula
+                            List Booking
                           </li>
                         </ol>
                       </nav>
                     </div>
-                    <div class="col-md-12">
-                      <p>
-                        Aula Cendrawasih adalah ruangan serbaguna, biasanya
-                        digunakan untuk kegiatan rapat besar, konferensi,
-                        wisuda, dan acara pernikahan
-                      </p>
-                      <p>Fasilitas:</p>
-                      <ul>
-                        <li>Kapasitas 300 orang</li>
-                        <li>
-                          6 AC, 300 kursi, 200 kursi belajar, 1 set wireless
-                          speaker, 3 set kursi jati, 1 mimbar, 1 podium, 1 LCD
-                          proyektor, 4 Meja lipat pendek, 2 meja lipat panjang.
-                        </li>
-                      </ul>
+                  </div>
+                  <div class="col-md-3 flex justify-content-end my-3">
+                    <button type="button" class="btn btn-primary" onclick="handleAddRoom()">
+                      <i class="fas fa-plus-circle"></i>
+                      Tambah Ruangan
+                    </button>
+                  </div>
+                  <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                      <div class="card">
+                        <img src="../assets/img/aula.jpeg" class="card-img-top h-25" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Ruang Aula</h5>
+                          <p class="card-text text-muted">Nama Peminjam: Suyitno</p>
+                          <p class="card-text text-muted">Keperluan: ORMIK 2023</p>
+                          <p class="card-text text-muted">Tanggal Kegiatan: 13 Februari 2023</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Dipesan 1 hari yang lalu</small>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-2 my-2">
-                      <img
-                        class="img-fluid rounded"
-                        src="../assets/img/aula.jpeg"
-                        alt=""
-                      />
+                    <div class="col">
+                      <div class="card">
+                        <img src="../assets/img/ruang-seminar.jpeg" class="card-img-top h-25" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Ruang Seminar</h5>
+                          <p class="card-text text-muted">Nama Peminjam: Surya</p>
+                          <p class="card-text text-muted">Keperluan: Seminar Kebangsaan SINAPTIKA 2023</p>
+                          <p class="card-text text-muted">Tanggal Kegiatan: 20 Februari 2023</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Dipesan 5 hari yang lalu</small>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-2 my-2">
-                      <img
-                        class="img-fluid rounded"
-                        src="../assets/img/aula.jpeg"
-                        alt=""
-                      />
+                    <div class="col">
+                      <div class="card">
+                        <img src="../assets/img/ruang-rapat.jpeg" class="card-img-top h-25" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Ruang Meeting</h5>
+                          <p class="card-text text-muted">Nama Peminjam: Suyitno</p>
+                          <p class="card-text text-muted">Keperluan: Persiapan Acara Kemah MAPALA</p>
+                          <p class="card-text text-muted">Tanggal Kegiatan: 30 Februari 2023</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Dipesan 3 hari yang lalu</small>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-2 my-2">
-                      <img
-                        class="img-fluid rounded"
-                        src="../assets/img/aula.jpeg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-md-2 my-2">
-                      <img
-                        class="img-fluid rounded"
-                        src="../assets/img/aula.jpeg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-md-2 my-2">
-                      <img
-                        class="img-fluid rounded"
-                        src="../assets/img/aula.jpeg"
-                        alt=""
-                      />
+                    <div class="col">
+                      <div class="card">
+                        <img src="../assets/img/lab-komputer.jpeg" class="card-img-top h-25" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Lab Komputer</h5>
+                          <p class="card-text text-muted">Nama Peminjam: Ghomidi</p>
+                          <p class="card-text text-muted">Keperluan: Praktikum Web</p>
+                          <p class="card-text text-muted">Tanggal Kegiatan: 10 Maret 2023</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Dipesan 2 hari yang lalu</small>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+
+          <!-- form booking -->
+          <div class="row card" id="form-booking" style="display: none">
+            <div class="row my-3 border-bottom">
+              <h4>Form Booking Ruangan</h4>
+            </div>
+            <form class="card-body" onsubmit="handleAddBooking(); return false">
+              <div class="form-group row mb-md-3">
+                <label for="name" class="col-4 col-form-label"
+                  >Nama Peminjam</label
+                >
+                <div class="col-8">
+                  <input
+                    id="name"
+                    name="name"
+                    placeholder="e.g John"
+                    type="text"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="form-group row mb-md-3">
+                <label for="rooms" class="col-4 col-form-label"
+                  >Nama Ruangan</label
+                >
+                <div class="col-8">
+                  <select id="rooms" name="rooms" class="form-select">
+                    <option value="">Pilih</option>
+                    <option value="hall">Aula</option>
+                    <option value="meeting-room">Ruang Rapat</option>
+                    <option value="ceminar-room">Ruang Seminar</option>
+                    <option value="lab-computer">Lab Komputer</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row mb-md-3">
+                <label for="events" class="col-4 col-form-label"
+                  >Deskripsi Kegiatan</label
+                >
+                <div class="col-8">
+                  <textarea
+                    id="events"
+                    name="events"
+                    cols="40"
+                    rows="5"
+                    class="form-control"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="form-group row mb-md-3">
+                <label class="col-4">Fasilitas Tambahan</label>
+                <div class="col-8">
+                  <div
+                    class="custom-control custom-checkbox custom-control-inline"
+                  >
+                    <input
+                      name="additional-facilities"
+                      id="additional-facilities_0"
+                      type="checkbox"
+                      class="custom-control-input"
+                      value="sound-system"
+                    />
+                    <label
+                      for="additional-facilities_0"
+                      class="custom-control-label"
+                      >Sound System</label
+                    >
+                  </div>
+                  <div
+                    class="custom-control custom-checkbox custom-control-inline"
+                  >
+                    <input
+                      name="additional-facilities"
+                      id="additional-facilities_1"
+                      type="checkbox"
+                      class="custom-control-input"
+                      value="wifi"
+                    />
+                    <label
+                      for="additional-facilities_1"
+                      class="custom-control-label"
+                      >Wifi</label
+                    >
+                  </div>
+                  <div
+                    class="custom-control custom-checkbox custom-control-inline"
+                  >
+                    <input
+                      name="additional-facilities"
+                      id="additional-facilities_2"
+                      type="checkbox"
+                      class="custom-control-input"
+                      value="big-screen"
+                    />
+                    <label
+                      for="additional-facilities_2"
+                      class="custom-control-label"
+                      >Layar Besar</label
+                    >
+                  </div>
+                  <div
+                    class="custom-control custom-checkbox custom-control-inline"
+                  >
+                    <input
+                      name="additional-facilities"
+                      id="additional-facilities_3"
+                      type="checkbox"
+                      class="custom-control-input"
+                      value="catering"
+                    />
+                    <label
+                      for="additional-facilities_3"
+                      class="custom-control-label"
+                      >Katering</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row mb-md-3">
+                <label for="date" class="col-4 col-form-label"
+                  >Tanggal Pinjam</label
+                >
+                <div class="col-8">
+                  <input
+                    id="date"
+                    name="date"
+                    type="date"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="form-group row mb-md-3">
+                <label for="contact-person" class="col-4 col-form-label"
+                  >Kontak Person</label
+                >
+                <div class="col-8">
+                  <input
+                    id="contact-person"
+                    name="contact-person"
+                    placeholder="eg. John Doe"
+                    type="text"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="form-group row mb-md-3">
+                <label for="phone-number" class="col-4 col-form-label"
+                  >Telepon/HP</label
+                >
+                <div class="col-8">
+                  <input
+                    id="phone-number"
+                    name="phone-number"
+                    placeholder="eg. 08123456789"
+                    type="text"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="form-group row mb-md-3">
+                <label for="email" class="col-4 col-form-label">Email</label>
+                <div class="col-8">
+                  <input
+                    id="email"
+                    name="email"
+                    placeholder="eg. john@mail.com"
+                    type="email"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="form-group row mb-md-3">
+                <div class="offset-4 col-8">
+                  <button name="submit" type="submit" class="btn btn-primary">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
 

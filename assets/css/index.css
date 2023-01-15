@@ -18,6 +18,10 @@
   -ms-overflow-style: none;
 }
 
+.wrapper-container > header {
+  position: sticky !important;
+}
+
 body::-webkit-scrollbar {
   display: none;
   /* Safari and Chrome */
@@ -63,13 +67,10 @@ body::-webkit-scrollbar {
   background-image: url("../img/waluyo.jpg");
 }
 .box:nth-child(2) {
-  background-image: url("https://i.imgur.com/WgXRMDs.jpg");
+  background-image: url("../img/ghomidi.jpeg");
 }
 .box:nth-child(3) {
-  background-image: url("https://i.imgur.com/0Cdlenp.jpg");
-}
-.box:nth-child(4) {
-  background-image: url("https://i.imgur.com/0Cdlenp.jpg");
+  background-image: url("../img/surya.png");
 }
 
 .wrapper-profile > .box {
@@ -124,8 +125,14 @@ body::-webkit-scrollbar {
   display:inline-block;
   opacity:0.7;
 }
+
 .social a:hover {
   opacity:1;
+}
+
+/* page aula */
+.container-100vh {
+  height: 100vh;
 }
 
 
@@ -137,5 +144,10 @@ body::-webkit-scrollbar {
 
   .title-nav > h3 {
     width: 70%;
+  }
+
+  /* page 100vh */
+  .container-100vh {
+    height: auto;
   }
 }
