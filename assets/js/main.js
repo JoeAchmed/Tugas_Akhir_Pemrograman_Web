@@ -23,3 +23,17 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+function handleAddRoom() {
+  let formBooking = document.getElementById("form-booking");
+  let listBooking = document.getElementById("list-booking");
+  formBooking.style.display = "block";
+  listBooking.style.display = "none";
+}
+
+function handleAddBooking() {
+  let formBooking = document.getElementById("form-booking");
+  let listBooking = document.getElementById("list-booking");
+  formBooking.style.display = "none";
+  listBooking.style.display = "block";
+}
