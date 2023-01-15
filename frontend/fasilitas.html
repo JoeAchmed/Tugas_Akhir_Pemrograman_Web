@@ -16,12 +16,12 @@
 </head>
 <body>
   <!-- Header -->
-  <header class="row bg-white shadow-sm px-3 sticky-top">
+  <header class="row bg-white shadow-sm px-1 px-md-3 sticky-top">
     <div class="col-md-12">
       <div class="row">
-        <div class="col-md-12 text-center py-2 d-flex align-items-start justify-content-center gap-3">
+        <div class="title-nav text-center py-2 d-flex align-items-start justify-content-center gap-3">
           <img src="../assets/img/e-Ruang.png" alt="logo e-ruang" width="30">
-          <h3>e-Ruang | Sistem Peminjaman Ruangan Nurul Fikri</h3>
+          <h3 class="fs-3 fs-5">e-Ruang | Sistem Peminjaman Ruangan Nurul Fikri</h3>
         </div>
       </div>
       <div class="row py-3 border-top">
@@ -39,7 +39,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-md-3 mt-md-0 mt-2">
                 <li class="nav-item">
                   <a
                     class="nav-link text-primary-emphasis"
@@ -94,33 +94,35 @@
   </header>
 
   <!-- Main content -->
-  <main class="px-lg-3 my-lg-5 my-4">
+  <main class="px-1 px-md-3 my-4 my-lg-5">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-8">
           <div class="card shadow border-0">
             <div class="card-body jumbotron" id="hall">
-              <div class="row">
+              <!-- Breadcrumb -->
+              <div class="row border-bottom">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                  <ol class="breadcrumb flex justify-content-end">
+                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Fasilitas</li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="row mt-3">
                 <div class="col-md-8">
                   <h4>AULA</h4>
                   <p>Aula besar untuk kegiatan acara MUNAS, Pentas Seni, Wisuda, Pernikahan, dan kegiatan lainnya didalam ruangan ber-AC yang nyaman dan berkesan mewah</p>
                   <a class="btn btn-transparent p-0 text-primary-emphasis" href="aula.html" role="button">Lihat Detail</a>
                 </div>
 
-                <!-- Breadcrumb -->
-                <div class="col-md-4">
-                  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Fasilitas</li>
-                    </ol>
-                  </nav>
+                <div class="col-md-4 mt-3 mt-md-0">
                   <img src="../assets/img/aula.jpeg" class="img-fluid rounded" alt="aula">
                 </div>
               </div>
             </div>
 
-            <hr class="my-4">
+            <hr class="my-2">
 
             <div class="card-body jumbotron" id="meeting-room">
               <h4>Ruang Rapat</h4>
@@ -129,13 +131,13 @@
                   <p>Aula besar untuk kegiatan acara MUNAS, Pentas Seni, Wisuda, Pernikahan, dan kegiatan lainnya didalam ruangan ber-AC yang nyaman dan berkesan mewah</p>
                   <a class="btn btn-transparent p-0 text-primary-emphasis" href="./meeting-room.html" role="button">Lihat Detail</a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mt-3 mt-md-0">
                   <img src="../assets/img/ruang-rapat.jpeg" class="img-fluid rounded" alt="ruang rapat">
                 </div>
               </div>
             </div>
 
-            <hr class="my-4">
+            <hr class="my-2">
 
             <div class="card-body jumbotron" id="ceminar-room">
               <h4>Ruang Seminar</h4>
@@ -144,13 +146,13 @@
                   <p>Auditorium megah untuk acara seminar kebangsaan, seminar umum, dapat dipergunakan juga untuk acara konser maupun pergelaran drama dan banyak acara lainnya</p>
                   <a class="btn btn-transparent p-0 text-primary-emphasis" href="./conference-room.html" role="button">Lihat Detail</a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mt-3 mt-md-0">
                   <img src="../assets/img/ruang-seminar.jpeg" class="img-fluid rounded" alt="ruang seminar">
                 </div>
               </div>
             </div>
 
-            <hr class="my-4">
+            <hr class="my-2">
 
             <div class="card-body jumbotron" id="computer-room">
               <h4>Lab Komputer</h4>
@@ -159,7 +161,7 @@
                   <p>Tersedia 40 unit komputer, proyektor dan aplikasi penunjang kegiatan belajar mahasiswa. Terkoneksi jaringan internet yang cepat dan stabil, sebagai penunjang kegiatan praktikum siswa</p>
                   <a class="btn btn-transparent p-0 text-primary-emphasis" href="./lab-computer.html" role="button">Lihat Detail</a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mt-3 mt-md-0">
                   <img src="../assets/img/lab-komputer.jpeg" class="img-fluid rounded" alt="ruang komputer">
                 </div>
               </div>
@@ -168,7 +170,7 @@
         </div>
 
         <!-- Sidebar -->
-        <div class="col-md-4">
+        <div class="col-md-4 mt-md-0 mt-2">
           <div class="card shadow border-0 pb-3">
             <div class="card-body">
               <h5 class="font-bold">Kategory Ruangan</h5>

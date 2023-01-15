@@ -135,4 +135,8 @@ body::-webkit-scrollbar {
   .navbar-nav > .nav-item > .nav-link:hover {
     transform: scale(1);
   }
+
+  .title-nav > h3 {
+    width: 70%;
+  }
 }
