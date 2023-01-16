@@ -37,6 +37,10 @@ body::-webkit-scrollbar {
   color: #fb9200 !important;
 }
 
+.nav-active {
+  color: #fb9200 !important;
+}
+
 .text-small {
   font-size: 12px;
   padding: 0;
